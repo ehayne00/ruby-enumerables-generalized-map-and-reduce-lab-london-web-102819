@@ -9,13 +9,15 @@ def map(array)
 end
 
 def reduce(array, sv=nil)
-  
-  while counter < array.size do
-   if array[counter] === true
-   
-   return true
-   end
-   counter += 1
-end
- return false
+  if sv
+    sum = sv
+    i=0
+ else sum= array[0]
+  i=1
  end
+while i<array.length
+sum = yield(sum, array[i])
+i+=1
+end
+sum
+end
