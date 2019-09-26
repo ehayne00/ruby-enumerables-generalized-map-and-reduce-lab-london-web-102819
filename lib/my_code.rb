@@ -8,7 +8,7 @@ def map(array)
   return new_array
 end
 
-def reduce(array, sv)
+def reduce(array, sv=nil)
   
   while counter < array.size do
    if array[counter] === true
