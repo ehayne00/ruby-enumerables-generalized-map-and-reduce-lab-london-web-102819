@@ -1,8 +1,8 @@
-def map(array)
+def map(array, p)
   new_array = []
   i = 0
   yield(while i < array.length do
-    new_array.push(array[i]*-1)
+    new_array.push(array[i]*{|p|})
     i+=1
   end
   return new_array
