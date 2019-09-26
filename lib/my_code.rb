@@ -12,7 +12,7 @@ end
 
 
 
-def my_reduce(array)
+def reduce(array)
   counter = 0
   while counter < array.size do
    if array[counter] === true
