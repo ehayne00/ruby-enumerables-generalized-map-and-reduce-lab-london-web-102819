@@ -8,10 +8,6 @@ def map(array)
   return new_array
 end
 
-
-
-
-
 def reduce(array)
   counter = 0
   while counter < array.size do
