@@ -9,7 +9,7 @@ def map(array)
 end
 
 def reduce(array, sv)
-  counter = 0
+  
   while counter < array.size do
    if array[counter] === true
    
